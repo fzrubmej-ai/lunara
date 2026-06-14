@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==
+    " crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
+    <title>lunara jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lista.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+  
+    <header>
+       <i class="fa-solid fa-bars menu-icon"></i>
+        
+        <div class="logo">
+          <a href="#">lunara <i class="fa-solid fa-moon"></i></a>  
+        </div>
+          <nav class="mobile-menu">
+          
+<div class="mobile-header">
+  <div class="close-menu">
+
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+              <div class="logo-icon">
+          <a href="#">lunara</a>  
+        </div>
+           <div class="icon">
+     <!-- <a href="acceso.html"> -->
+      <i class="fa-solid fa-user"></i> 
+        </a> 
+        <a href="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        
+        <div  class="cart">
+          
+            <i class="fa-solid fa-bag-shopping"> </i>
+            <span class=" numero">0</span>
+          
+         
+        </div>
+        
+      </div>
+        
+    </div>
+        
+            <a href="#">New in</a>
+            <a href="#"> BEST SELLERES</a>
+            <a href="#"> FERIA</a>
+            <a href="#"> JOYAS</a>
+            <a href="#">COMPLEMENTOS</a>
+            <a href="#" class="SPECIAL">SPECIAL PRICES</a>
+            
+        </nav>
+ <div class="overlay"></div>
+          
+      
+          <nav class="menu ">
+            <a href="#">New in</a>
+            <a href="#"> BEST SELLERES</a>
+            <a href="#"> FERIA</a>
+            <a href="#"> JOYAS</a>
+            <a href="#">COMPLEMENTOS</a>
+            <a href="#" class="SPECIAL">SPECIAL PRICES</a>
+            
+        </nav>
+
+        
+ 
+        <div class="icon">
+          <a href="acceso.html">
+            <i class="fa-solid fa-user"></i>
+          </a>
+       <a href="buscar.html"> 
+         <i class="fa-solid fa-magnifying-glass"></i>
+       </a>
+       
+        <div  class="cart">
+          <a href="">
+            <i class="fa-solid fa-bag-shopping"> </i>
+          </a>
+        
+         <span class=" numero">0</span>
+        
+        </div>
+        </div>
+    </header>
+      <script>
+      const menu = document.querySelector(".mobile-menu");
+const icon = document.querySelector(".menu-icon");
+const overlay = document.querySelector(".overlay");
+
+icon.onclick = () => {
+  menu.classList.toggle("active");
+  overlay.classList.toggle("active");
+};
+    </script>
+    <script>
+
+
+overlay.onclick = () => {
+  menu.classList.remove("active");
+  overlay.classList.remove("active");
+};
+const closeMenu = document.querySelector(".close-menu");
+
+closeMenu.onclick = () => {
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+}
+</script> 
+</body>
+</html>
